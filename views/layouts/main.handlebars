@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/public/css/main.css">
+    <title>Job Posts Website</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+</head>
+<body>
+    <a href="/" class="nav">Home</a>
+    <a href="/internships" class="nav">Internships</a>
+    <a href="/fullTime" class="nav">Full-Time Jobs</a>
+    <a href="/topPayingFullTime" class="nav">Highest Paying Permanent Jobs</a>
+    <a href="/technical" class="nav">Technical Jobs</a>
+    <a href="/nonTechnical" class="nav">Non-Technical Jobs</a>
+    <br>
+        {{{body}}}
+</body>
+</html>
+
+<script>
+    function autoUpdateSearch() {
+        $("#search").on('keyup', function() {
+            let companyCount = $(".company").length;
+            $(".company").each(function() {
+                if ($(this).text().toLowerCase().includes($("#search").val().toLowerCase())) {
+                    $(this).show();
+                    companyCount++;
+                } else {
+                    $(this).hide();
+                    companyCount--;
+                }
+            });
+            if (companyCount == 0) {
+               $("#zeromatches").show();
+            } else {
+               $("#zeromatches").hide();
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        autoUpdateSearch();
+    });
+</script>

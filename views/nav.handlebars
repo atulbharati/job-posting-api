@@ -1,0 +1,26 @@
+<h1>Jobs In This Category:</h1>
+{{#if data}}
+    {{#each data}}
+        <article>
+            <p><b>{{this.companyName}}</b>, <i>{{this.positionTitle}}</i>, {{this.location}}</p>
+            <p>Type: {{this.jobType}}, Salary: ${{this.salary}}</p>
+            <p>Qualifications:
+            <ul>
+                {{#each this.qualifications}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            </p>
+            <a href="{{this.url}}">Click here for job link</a>
+            <br><br>
+        </article>
+    {{/each}}
+    <br>
+    <a href="/addJob">Add a Job Post</a>
+{{else}}
+<article>
+    <p>No jobs found...</p>
+    <br>
+    <a href="/addJob">Add a Job Post</a>
+</article>
+{{/if}}

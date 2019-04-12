@@ -1,0 +1,27 @@
+<h2>Search Company</h2>
+<div id="textarea">
+    <input type="text" id="search" size="50" placeholder="Search by company name...">
+</div>
+<br>
+<h1>Job Posts</h1>
+{{#if data}}
+    {{#each data}}
+    <div class="company">
+        <article>
+            <hr>
+            <p><b>{{this.companyName}}</b></p>
+            <a href="{{this.url}}">Job Post Link</a>
+            <br><br>
+        </article>
+    </div>
+    {{/each}}
+    <p id="zeromatches">No matches were found...</p>
+    <br>
+    <a href="/addJob">Add a Job Post</a>
+{{else}}
+<article>
+    <p>No job posts yet...</p>
+    <br>
+    <a href="/addJob">Be the first to share info about job post!</a>
+</article>
+{{/if}}

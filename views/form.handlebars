@@ -1,0 +1,39 @@
+<h1>Create New Job Post</h1>
+<article>
+    <form method="POST" action="api/addJob">
+        <div class="input-field">
+            <label>Company Name:</label>
+            <input required type="text" name="companyName" size="50" placeholder="Enter Name">
+        </div>
+        <div class="input-field">
+            <label>Job Type:</label>
+            <input required type="text" name="jobType" size="75" placeholder="i.e. *undergrad/grad + season* internship, entry-level, mid-level, senior">
+        </div>
+        <div class="input-field">
+            <label>Technical?</label>
+            <input required type="text" name="isTechnical" size="25" placeholder="Yes or No">
+        </div>
+        <div class="input-field">
+            <label>Position Title:</label>
+            <input required type="text" name="positionTitle" size="75" placeholder="Enter Title">
+        </div>
+        <div class="input-field">
+            <label>Location:</label>
+            <input required type="text" name="location" size="50" placeholder="Format: City, State (i.e. New York City, NY)">
+        </div>
+        <div class="input-field">
+            <label>Salary:</label>
+            <input required type="text" name="salary" size="50" placeholder="USD (internship: hourly, full-time: annually), no commas">
+        </div>
+        <div class="input-field">
+            <label>Qualifications:</label>
+            <textarea required type="text" name="qualifications" rows="15" placeholder="Qual 1; Qual 2; Qual 3;... (separate with semicolons)"></textarea>
+        </div>
+        <div class="input-field">
+            <label>Job Post URL:</label>
+            <input required type="text" name="url" size="150" placeholder="Format should be http://...">
+        </div>
+        <br>
+        <button type="submit">Create Job Post</button>
+    </form>
+</article>

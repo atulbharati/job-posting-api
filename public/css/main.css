@@ -1,0 +1,58 @@
+/****************
+      GLOBAL
+*****************/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/****************
+      MAIN
+*****************/
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+h1 {
+    font-weight: 250;
+}
+
+article {
+    padding: 10px;
+    background-color: #d2ef2d;
+    margin-bottom: 30px;
+}
+
+.nav {
+    padding: 5px;
+    background-color: lightblue;
+    display: inline;
+    font-weight: bold;
+    color: white;
+}
+
+/****************
+      FORM
+*****************/
+
+.input-field {
+    padding: 5px 0;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+}
+
+textarea {
+    padding: 5px;
+    font-size: 20px;
+    width: 50%;
+}
