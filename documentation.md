@@ -8,8 +8,6 @@ Date: April 12, 2019
 
 Project Topic: Job Posts API
 
-URL: https://job-posting-api.herokuapp.com/
-
 ---
 
 ### 1. Data Format and Storage
