@@ -1,19 +1,17 @@
 {
-    "name": "p5-reddit-clone",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "body-parser": "^1.17.1",
-        "express": "^4.15.2",
-        "express-handlebars": "^3.0.0",
-        "morgan": "^1.8.1",
-        "underscore": "^1.9.1"
-    }
+  "name": "midterm-project",
+  "version": "1.0.0",
+  "description": "In this project, you will tie together everything you have learned up to now in the semester.",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.88.0",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
 }
