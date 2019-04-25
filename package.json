@@ -1,5 +1,5 @@
 {
-  "name": "midterm-project",
+  "name": "job-posting-api",
   "version": "1.0.0",
   "description": "In this project, you will tie together everything you have learned up to now in the semester.",
   "main": "index.js",
@@ -13,8 +13,6 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
   "author": "",
   "license": "ISC"
 }
